@@ -31,6 +31,7 @@ function Simulate(){
 
 function endSim(){
     displayColLog();
+    Console.log("KC: " + kc);
     resetSim();
 }
 
@@ -146,7 +147,9 @@ $('#GenData').click(function() {
 
 //Loot from 1 kc
 $('#SimButton').click(function() {
-    StartSim();
+    Simulate();
+    displayColLog();
+    Console.log("KC: " + kc);
 });
 
 //Simulates KC until stopped
