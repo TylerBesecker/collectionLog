@@ -98,7 +98,7 @@ function getAverage(){
         average = average + greenLog[i];
     }
     //divide by # of green logs total
-    average = average / greenLog.length;
+    return average = average / greenLog.length;
 }
 
 //StartLoop generates KC every x amount of time.
@@ -132,7 +132,7 @@ $('#GenData').click(function() {
     }
 
     //Print Results (needs overhaul)
-    getAverage();
+    var average = getAverage();
     console.log("Made from " + greenLog.length + " Simulations");
     console.log("Average Clues for completion: " + average);
     console.log("Unluckiest player took: " + unluckCount + " to complete green log.");
