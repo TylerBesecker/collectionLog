@@ -25,6 +25,7 @@ function Simulate(){
     kc = kc + 1;
 
     for(var i = 0; i < ROLLS; i++){
+        console.log("Clue role: " + i);
         Roll();
     }
 }
@@ -58,6 +59,8 @@ function resetSim(){
 //Rolls and checks to see if we hit the desired loot table.
 function Roll(){
     var rareDrop = getRandomInt(DROPCHANCE);
+    console.log(DROPCHANCE + " is the drop table");
+    console.log("Drop number is: " + rareDrop);
     if(rareDrop == DROPCHANCE -1){ //we hit the table
         RollRareTable();
     }
@@ -80,6 +83,7 @@ function CheckLog(item){
 //RollRareTable rolls on the rare table, and gives us an item.
 function RollRareTable(){
     var rareItem = getRandomInt(COLLOG.length); 0-14
+    console.log("Rare Item gen: " + rareItem);
     var item = COLLOG[rareItem];
     CheckLog(item);
 }
