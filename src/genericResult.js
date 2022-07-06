@@ -31,7 +31,7 @@ function Simulate(){
 
 function endSim(){
     displayColLog();
-    Console.log("KC: " + kc);
+    console.log("KC: " + kc);
     resetSim();
 }
 
