@@ -27,6 +27,7 @@ function Simulate(){
     for(var i = 0; i < ROLLS; i++){
         Roll();
     }
+    displayColLog();
 }
 
 function endSim(){
@@ -82,7 +83,6 @@ function CheckLog(item){
 //RollRareTable rolls on the rare table, and gives us an item.
 function RollRareTable(){
     var rareItem = getRandomInt(COLLOG.length); 0-14
-    console.log("Rare Item gen: " + rareItem);
     var item = COLLOG[rareItem];
     CheckLog(item);
 }
@@ -108,7 +108,7 @@ function getAverage(){
 //X being the variable in setInterval in MS. (1000 = 1 second)
 function startLoop() {
     Simulate();
-    interval = setInterval(Simulate, 1000);
+    interval = setInterval(Simulate, 100);
   }
   
   //StopLoop kills the startLoop interval
@@ -135,7 +135,6 @@ $('#GenData').click(function() {
     }
 
     //Print Results (needs overhaul)
-    displayColLog();
     console.log("KC: " + kc);
     var average = getAverage();
     console.log("Made from " + greenLog.length + " Simulations");
@@ -147,7 +146,6 @@ $('#GenData').click(function() {
 //Loot from 1 kc
 $('#SimButton').click(function() {
     Simulate();
-    displayColLog();
     console.log("KC: " + kc);
 });
 
