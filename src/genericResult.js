@@ -24,7 +24,7 @@ function Simulate(){
 
     kc = kc + 1;
 
-    for(var i = 0; i <= ROLLS; i++){
+    for(var i = 0; i < ROLLS; i++){
         Roll();
     }
 }
