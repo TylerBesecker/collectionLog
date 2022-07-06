@@ -132,6 +132,7 @@ $('#GenData').click(function() {
     }
 
     //Print Results (needs overhaul)
+    displayColLog();
     var average = getAverage();
     console.log("Made from " + greenLog.length + " Simulations");
     console.log("Average Clues for completion: " + average);
