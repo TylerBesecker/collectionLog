@@ -118,6 +118,10 @@ function displayColLog(){
     for (var i of filledColLog){
         var imageName = "../images/icons/" + i;
         console.log(imageName); //testing
+        var image = new Image();
+        image.src = url;
+        $('#colLogDisplay').append(image);
+
     }
 }
 
