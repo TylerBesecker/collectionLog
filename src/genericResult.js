@@ -59,8 +59,6 @@ function resetSim(){
 //Rolls and checks to see if we hit the desired loot table.
 function Roll(){
     var rareDrop = getRandomInt(DROPCHANCE);
-    console.log(DROPCHANCE + " is the drop table");
-    console.log("Drop number is: " + rareDrop);
     if(rareDrop == DROPCHANCE -1){ //we hit the table
         RollRareTable();
     }
@@ -69,10 +67,11 @@ function Roll(){
 //CheckLog checks the item recieved and marks the collection log
 //if it is new.
 function CheckLog(item){
-    if(!filledColLog.includes(item)){
+    
+    var itemPic = item + ".png";
+    if(!filledColLog.includes(itemPic)){
         console.log(item + " get!");
-        item = item + ".png"
-        filledColLog.push(item);
+        filledColLog.push(itemPic);
     }
     else{//dupe
         console.log("dupe");
