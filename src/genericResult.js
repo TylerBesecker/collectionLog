@@ -127,7 +127,7 @@ function displayColLog(){
 
 //Generates Data for x amount of green logs
 $('#GenData').click(function() {
-    while(greenLog.length != 10){ //simulates 100 green logs
+    while(greenLog.length != 1){ //simulates 100 green logs
         Simulate();
     }
 
