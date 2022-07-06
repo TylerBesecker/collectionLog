@@ -67,6 +67,7 @@ function Roll(){
 function CheckLog(item){
     if(!filledColLog.includes(item)){
         console.log(item + " get!");
+        item = item + ".png"
         filledColLog.push(item);
     }
     else{//dupe
