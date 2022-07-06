@@ -30,6 +30,7 @@ function Simulate(){
 }
 
 function endSim(){
+    displayColLog();
     resetSim();
 }
 
@@ -117,7 +118,7 @@ function displayColLog(){
     for (var i of filledColLog){
         var imageName = "../images/icons/" + i;
         console.log(imageName); //testing
-        $('#colLogDisplay').prepend('<img src='imageName'/>');
+        $('#colLogDisplay').prepend('<img src='"imageName"'/>');
     }
 }
 
