@@ -25,7 +25,6 @@ function Simulate(){
     kc = kc + 1;
 
     for(var i = 0; i < ROLLS; i++){
-        console.log("Clue role: " + i);
         Roll();
     }
 }
@@ -137,6 +136,7 @@ $('#GenData').click(function() {
 
     //Print Results (needs overhaul)
     displayColLog();
+    console.log("KC: " + kc);
     var average = getAverage();
     console.log("Made from " + greenLog.length + " Simulations");
     console.log("Average Clues for completion: " + average);
