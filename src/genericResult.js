@@ -113,6 +113,14 @@ function startLoop() {
     endSim();
   }
 
+function displayColLog(){
+    for (var i of filledColLog){
+        var imageName = "../images/icons/" + i;
+        console.log(imageName); //testing
+        $('#colLogDisplay').prepend('<img src='imageName'/>');
+    }
+}
+
 //Generates Data for x amount of green logs
 $('#GenData').click(function() {
     while(greenLog.length != 100){ //simulates 100 green logs
