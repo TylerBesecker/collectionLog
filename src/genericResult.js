@@ -119,7 +119,7 @@ function displayColLog(){
         var imageName = "../images/icons/" + i;
         console.log(imageName); //testing
        // $('#colLogDisplay').prepend('<img src='"imageName"'/>');
-        $("#colLogDisplay img:nth-child("i")").attr('src',imageName);
+        $("#colLogDisplay img:nth-child("i")").attr('src',imageName));
     }
 }
 
