@@ -148,7 +148,7 @@ $('#GenData').click(function() {
 $('#SimButton').click(function() {
     Simulate();
     displayColLog();
-    Console.log("KC: " + kc);
+    console.log("KC: " + kc);
 });
 
 //Simulates KC until stopped
