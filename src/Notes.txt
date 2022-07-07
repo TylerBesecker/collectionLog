@@ -1,0 +1,65 @@
+So the idea behind Generic.js is that we can load in a large amount of Drop tables, and simulate them that way.
+It should work perfectly fine for anything with a stagnent rolls/rates, which IDK what has that but we'll look and see.
+
+Drop tables:
+
+Abby Sire:
+Unsired: 1/100
+Which leads to:
+
+
+Bludgeon claw	1	1/2.065
+Bludgeon spine	1	1/2.065
+Bludgeon axon	1	1/2.065
+Abyssal dagger 1/4.923
+Abyssal whip	 1/10.67
+Jar of miasma	1	1/9.846
+Abyssal head	1	1/12.8
+byssal orphan	1	1/25.6
+
+Unsired drops Bludgeon piece With rarity 62/128
+Unsired drops Abyssal dagger with rarity 26/128
+Unsired drops Abyssal whip with rarity 12/128
+Unsired drops Jar of miasma with rarity 13/128
+Unsired drops Abyssal head with rarity 10/128
+Unsired drops Abyssal orphan with rarity 5/128
+
+Alchemical Hydra
+Hydra's eye	1	1/181
+Hydra's fang	1	1/181
+Hydra's heart	1	1/181
+
+Hydra tail    1/513
+Hydra leather	1/514
+Hydra's claw	1/1,001
+Dragon thrownaxe with rarity 1/2,000 
+Dragon knife with rarity 1/2,001
+Alchemical hydra heads	1/256
+Jar of chemicals	1/2,000
+Ikkle hydra with rarity 1/3,000
+
+Barrows:
+~1/14.57 for item
+
+Each item is 7 × 1/2,448	
+7 being the max rolls and 1/2,448 being the chance at any item on a roll.
+
+Bryophyta:
+
+Bryophyta's essence 1/118
+
+Callisto
+Tyrannical ring 1/512 
+Dragon Pickaxe 1/170.7	
+Dragon 2h 1/256
+Callisto cub	1/2,000
+
+Ceberus
+1/128 of hitting table:
+1/512 of any crystal (4 crystals)
+
+flat odds
+Jar of souls	1/2,000
+Hellpuppy 1/3,000
+1/64 key master teleport
+
