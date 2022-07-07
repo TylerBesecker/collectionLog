@@ -118,6 +118,7 @@ function startLoop() {
   }
 
 function displayColLog(){
+    $('#colLogDisplay').empty();
     for (var i of filledColLog){
         var imageName = "../images/icons/" + i;
         console.log(imageName); //testing
