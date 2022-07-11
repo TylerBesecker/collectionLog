@@ -153,7 +153,6 @@ $('#GenData').click(function() {
 //Loot from 1 kc
 $('#SimButton').click(function() {
     Simulate();
-    console.log("KC: " + kc);
 });
 
 //Simulates KC until stopped
@@ -161,6 +160,10 @@ $('#AutoSimButton').on('click', function(e){
     if (!interval) {
         startLoop();
     }
+});
+
+$('#resetButton').click(function() {
+    resetSim();
 });
 
 //End KC simulation.
