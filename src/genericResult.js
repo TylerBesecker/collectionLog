@@ -121,12 +121,18 @@ function displayColLog(){
     $('#colLogDisplay').empty();
     for (var i of filledColLog){
         var imageName = "../images/icons/" + i;
-        console.log(imageName); //testing
         var image = new Image();
         image.src = imageName;
         $('#colLogDisplay').append(image);
 
     }
+}
+
+function updateDisplay(){
+    displayColLog();
+    $('#kcDisplay').empty();
+    $('#kcDisplay').text("Current KC: " + kc);
+    
 }
 
 //Generates Data for x amount of green logs
