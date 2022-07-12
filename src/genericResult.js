@@ -131,7 +131,7 @@ function displayColLog(){
 function updateDisplay(){
     displayColLog();
     $('#kcDisplay').empty();
-    $('#kcDisplay').text("Current KC: " + kc);
+    $('#kcDisplay').append("Current KC: " + kc);
     
 }
 
@@ -142,7 +142,6 @@ $('#GenData').click(function() {
     }
 
     //Print Results (needs overhaul)
-    console.log("KC: " + kc);
     var average = getAverage();
     console.log("Made from " + greenLog.length + " Simulations");
     console.log("Average Clues for completion: " + average);
@@ -153,6 +152,7 @@ $('#GenData').click(function() {
 //Loot from 1 kc
 $('#SimButton').click(function() {
     Simulate();
+    updateDisplay();
 });
 
 //Simulates KC until stopped
@@ -163,6 +163,7 @@ $('#AutoSimButton').on('click', function(e){
 });
 
 $('#resetButton').click(function() {
+    updateDisplay();
     resetSim();
 });
 
