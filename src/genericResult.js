@@ -163,7 +163,6 @@ $('#AutoSimButton').on('click', function(e){
 });
 
 $('#resetButton').click(function() {
-    updateDisplay();
     resetSim();
 });
 
